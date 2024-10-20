@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:inputType="none"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:editable="false"
+        tools:ignore="Deprecated,LabelFor"
+        />
+
+    <GridLayout
+        android:id="@+id/calculator_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:rowCount="6">
+
+        <Button
+            android:id="@+id/buttonMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/memory_save" />
+
+        <Button
+            android:id="@+id/buttonMR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/memory_read" />
+
+        <Button
+            android:id="@+id/buttonMC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/memory_clear" />
+
+        <Button
+            android:id="@+id/cBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/cBTN" />
+
+        <Button
+            android:id="@+id/sevenBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/sevenBTN" />
+
+        <Button
+            android:id="@+id/eightBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/eightBTN" />
+
+        <Button
+            android:id="@+id/nineBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/nineBTN" />
+
+        <Button
+            android:id="@+id/divideBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/divideBTN" />
+
+        <Button
+            android:id="@+id/fourBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/fourBTN" />
+
+        <Button
+            android:id="@+id/fiveBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/fiveBTN" />
+
+        <Button
+            android:id="@+id/sixBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/sixBTN" />
+
+        <Button
+            android:id="@+id/multiplyBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/multiplyBTN" />
+
+        <Button
+            android:id="@+id/oneBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/oneBTN" />
+
+        <Button
+            android:id="@+id/twoBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/twoBTN" />
+
+        <Button
+            android:id="@+id/threeBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/threeBTN" />
+
+        <Button
+            android:id="@+id/substractBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/substractBTN" />
+
+        <Button
+            android:id="@+id/zeroBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/zeroBTN" />
+
+        <Button
+            android:id="@+id/dotBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/dotBTN" />
+
+        <Button
+            android:id="@+id/equalsBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/equalsBTN" />
+
+        <Button
+            android:id="@+id/addBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:text="@string/addBTN" />
+
+    </GridLayout>
+</RelativeLayout>
+
