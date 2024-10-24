@@ -19,11 +19,10 @@
         android:padding="16dp"
         android:textSize="24sp"
         android:inputType="none"
-        android:background="@android:color/darker_gray"
+        android:background="#f7f2f9"
         android:textColor="@android:color/black"
         android:editable="false"
-        tools:ignore="Deprecated,LabelFor"
-        />
+        tools:ignore="Deprecated,LabelFor"/>
 
     <GridLayout
         android:id="@+id/calculator_grid"
@@ -34,165 +33,185 @@
         android:layout_marginTop="16dp"
         android:alignmentMode="alignMargins"
         android:columnCount="4"
-        android:padding="8dp"
-        android:rowCount="6">
+        android:padding="4dp"
+        android:rowCount="5">
 
         <Button
             android:id="@+id/buttonMS"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/memory_save" />
 
         <Button
             android:id="@+id/buttonMR"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/memory_read" />
 
         <Button
             android:id="@+id/buttonMC"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/memory_clear" />
 
         <Button
             android:id="@+id/cBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/cBTN" />
 
         <Button
             android:id="@+id/sevenBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/sevenBTN" />
 
         <Button
             android:id="@+id/eightBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/eightBTN" />
 
         <Button
             android:id="@+id/nineBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/nineBTN" />
 
         <Button
             android:id="@+id/divideBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/divideBTN" />
 
         <Button
             android:id="@+id/fourBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/fourBTN" />
 
         <Button
             android:id="@+id/fiveBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/fiveBTN" />
 
         <Button
             android:id="@+id/sixBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/sixBTN" />
 
         <Button
             android:id="@+id/multiplyBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/multiplyBTN" />
 
         <Button
             android:id="@+id/oneBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/oneBTN" />
 
         <Button
             android:id="@+id/twoBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/twoBTN" />
 
         <Button
             android:id="@+id/threeBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/threeBTN" />
 
         <Button
             android:id="@+id/substractBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/substractBTN" />
 
         <Button
             android:id="@+id/zeroBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/zeroBTN" />
 
         <Button
             android:id="@+id/dotBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/dotBTN" />
 
         <Button
             android:id="@+id/equalsBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/equalsBTN" />
 
         <Button
             android:id="@+id/addBTN"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_columnWeight="1"
             android:layout_margin="4dp"
             android:text="@string/addBTN" />

@@ -63,8 +63,12 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener listener = v -> {
             Button button = (Button) v;
             String operator = button.getText().toString();
-
-            operand1 = Double.parseDouble(display.getText().toString());
+            try {
+                operand1 = Double.parseDouble(display.getText().toString());
+            }
+            catch (Exception e) {
+                return;
+            }
             currentOperator = operator;
             operatorPressed = true;
         };
@@ -78,7 +82,12 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                operand2 = Double.parseDouble(display.getText().toString());
+                try {
+                    operand2 = Double.parseDouble(display.getText().toString());
+                }
+                catch (Exception e) {
+                    return;
+                }
                 double result = 0;
 
                 switch (currentOperator) {
@@ -121,8 +130,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonMS).setOnClickListener(v -> {
             String displayText = display.getText().toString();
             if (!displayText.isEmpty()) {
-                memory = Double.parseDouble(displayText);
-                Toast.makeText(MainActivity.this, "Memory Saved", Toast.LENGTH_SHORT).show();
+                try {
+                    memory = Double.parseDouble(displayText);
+                    Toast.makeText(MainActivity.this, "Memory Saved", Toast.LENGTH_SHORT).show();
+                }
+                catch (Exception e) {
+                    return;
+                }
             } else {
                 Toast.makeText(MainActivity.this, "No value to save", Toast.LENGTH_SHORT).show();
             }
